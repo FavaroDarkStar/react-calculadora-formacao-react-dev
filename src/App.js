@@ -52,6 +52,18 @@ const App = () => {
     }
   }
 
+  const handleDivNumber = () => {
+    if(firstNumber === '0'){
+      setFirstNumber(currentNumber);
+      setCurrentNumber('0');
+      setOperation('/');
+    }else{
+      const div = Number(firstNumber) / Number(currentNumber);
+      setFirstNumber('0');
+      setCurrentNumber(String(div))
+    }
+  }
+
   const handleOnClear = () => {
     setCurrentNumber('0');
     setFirstNumber('0');
@@ -70,6 +82,9 @@ const App = () => {
         case 'X':
           handleMultNumber();
           break;
+        case '/':
+          handleDivNumber();
+          break;
         default:
           break;
       }
@@ -86,31 +101,31 @@ const App = () => {
         <Input value={currentNumber}/>
         {/* 1°Linha */}
         <Row>
-          <Button label="x" onClick={handleMultNumber}/>
-          <Button label="/" onClick={() => handleAddNumber('/')}/>
-          <Button label="C" onClick={handleOnClear}/> {/*Limpar*/}
-          <Button label="." onClick={() => handleAddNumber('.')}/> {/*Vazio definir dps*/}
-        </Row>
-        {/* 2°Linha */}
-        <Row>
           <Button label="7" onClick={() => handleAddNumber('7')}/>
           <Button label="8" onClick={() => handleAddNumber('8')}/>
           <Button label="9" onClick={() => handleAddNumber('9')}/>
-          <Button label="-" onClick={handleMinusNumbers}/>
+          <Button label="/" onClick={handleDivNumber}/>
         </Row>
-        {/* 3°Linha */}
+        {/* 2°Linha */}
         <Row>
           <Button label="4" onClick={() => handleAddNumber('4')}/>
           <Button label="5" onClick={() => handleAddNumber('5')}/>
           <Button label="6" onClick={() => handleAddNumber('6')}/>
-          <Button label="+" onClick={handleSumNumbers}/>
+          <Button label="x" onClick={handleMultNumber}/>
         </Row>
-        {/* 4°Linha */}
+        {/* 3°Linha */}
         <Row>
           <Button label="1" onClick={() => handleAddNumber('1')}/>
           <Button label="2" onClick={() => handleAddNumber('2')}/>
           <Button label="3" onClick={() => handleAddNumber('3')}/>
+          <Button label="-" onClick={handleMinusNumbers}/>
+        </Row>
+        {/* 4°Linha */}
+        <Row>
+          <Button label="C" onClick={handleOnClear}/> {/*Limpar*/}
+          <Button label="0" onClick={() => handleAddNumber('0')}/> 
           <Button label="=" onClick={handleEquals}/>
+          <Button label="+" onClick={handleSumNumbers}/>
         </Row>
       </Content>
     </Container>
