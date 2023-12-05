@@ -1,11 +1,11 @@
 # Projeto: Calculadora com React  
 ![Calculadora](./public/preview.png)
 
-Este projeto foi desenvolvido com base no curso **Formação React Developer - Digital Innovation One**.
-
 ## Descrição
 
 A Calculadora foi implementada utilizando React e oferece operações de adição, subtração, multiplicação e divisão. Além disso, conta com botões numéricos de 0 a 9, um botão para retornar o resultado da operação e outro para limpar a calculadora.
+
+Este projeto foi desenvolvido com base no curso **Formação React Developer - Digital Innovation One**.
 
 ## Funcionalidades
 
