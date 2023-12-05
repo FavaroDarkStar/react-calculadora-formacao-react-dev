@@ -1,6 +1,5 @@
 # Projeto Criando Uma Calculadora Com React
 ## Criado com base no curso:  
-
 `Formacao React Developer - Digital Innovation One`
 
 
