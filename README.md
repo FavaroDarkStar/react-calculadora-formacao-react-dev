@@ -1,4 +1,5 @@
-# Projeto: Calculadora com React
+# Projeto: Calculadora com React  
+![Calculadora](./public/preview.png)
 
 Este projeto foi desenvolvido com base no curso **Formação React Developer - Digital Innovation One**.
 
