@@ -8,38 +8,39 @@ A Calculadora foi implementada utilizando React e oferece operações de adiçã
 
 ## Funcionalidades
 
-- Adição
-- Subtração
-- Multiplicação
-- Divisão
+- Adição(+)
+- Subtração(-)
+- Multiplicação(X)
+- Divisão(/)
 - Botões numéricos (0 a 9)
-- Botão de retorno do resultado
-- Botão de limpar a calculadora
+- Botão de retorno do resultado(=)
+- Botão de limpar a calculadora(C)
 
-Como Usar
+## Como Usar
+
 Para começar a utilizar este projeto, siga os passos abaixo:
 
-Clone este repositório:
+1. **Clone este repositório:**
+   ```bash
+   git clone https://github.com/FavaroDarkStar/react-calculadora-formacao-react-dev.git   
+   ```
 
-bash
-Copy code
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-Navegue até o diretório do projeto:
+2. **Navegue até o diretório do projeto:**
+   ```bash
+   cd react-calculadora-formacao-react-dev
+   ```
 
-bash
-Copy code
-cd nome-do-repositorio
-Instale as dependências:
+3. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
 
-bash
-Copy code
-npm install
-Inicie a aplicação localmente:
+4. **Inicie a aplicação localmente:**
+   ```bash
+   npm start
+   ```
 
-bash
-Copy code
-npm start
-Acesse a aplicação no seu navegador em:
-http://localhost:3000
+5. **Acesse a aplicação no seu navegador em:**
+   [http://localhost:3000](http://localhost:3000)
 
 Divirta-se calculando! 🧮
